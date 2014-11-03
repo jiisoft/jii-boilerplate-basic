@@ -1,0 +1,24 @@
+{
+  "name": "jii-boilerplate-basic",
+  "version": "0.0.1",
+  "description": "Basic boilerplate application supplied with Jii Framework",
+  "main": "index.js",
+  "dependencies": {
+    "jii": "latest",
+    "require-all": "0.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiisoft/jii-boilerplate-basic"
+  },
+  "author": "Vladimir Kozhin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiisoft/jii-boilerplate-basic/issues"
+  },
+  "homepage": "https://github.com/jiisoft/jii-boilerplate-basic"
+}
