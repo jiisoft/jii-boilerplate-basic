@@ -4,7 +4,10 @@
   "description": "Basic boilerplate application supplied with Jii Framework",
   "main": "index.js",
   "dependencies": {
-    "jii": "latest",
+    "jii": "^0.2.1",
+    "jii-request": "*",
+    "jii-request-httpserver": "*",
+    "jii-data": "*",
     "require-all": "0.0.8"
   },
   "devDependencies": {},
@@ -19,6 +22,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jiisoft/jii-boilerplate-basic/issues"
+  },
+  "dependencies": {
+    "jii": "*",
+    "jii-model": "*",
+    "jii-httpserver": "*"
   },
   "homepage": "https://github.com/jiisoft/jii-boilerplate-basic"
 }

@@ -7,11 +7,11 @@ var fs = require('fs');
 
 /**
  * @class app.controllers.SiteController
- * @extends Jii.controller.BaseController
+ * @extends Jii.base.Controller
  */
 var self = Jii.defineClass('app.controllers.SiteController', {
 
-	__extends: Jii.controller.BaseController,
+	__extends: Jii.base.Controller,
 
 	actionIndex: function(context) {
 		var model = new app.models.TextModel();
@@ -20,7 +20,7 @@ var self = Jii.defineClass('app.controllers.SiteController', {
 		model.setAttributes(context.request.get());
 
 		model.validate().then(function(success) {
-			context.response.data = _.template(indexTemplate, model.getAttributes());
+			context.response.data = Jii._.template(indexTemplate, model.getAttributes());
 
 			if (success) {
 				context.response.data += 'You text: ' + model.get('text');

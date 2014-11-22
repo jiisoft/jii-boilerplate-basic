@@ -1,10 +1,10 @@
 /**
  * @class app.models.TextModel
- * @extends Jii.data.Model
+ * @extends Jii.base.Model
  */
 Jii.defineClass('app.models.TextModel', {
 
-	__extends: Jii.data.Model,
+	__extends: Jii.base.Model,
 
 	_attributes: {
 		title: null,
