@@ -2,6 +2,7 @@ global.Jii = require('jii');
 require('jii-httpserver');
 require('jii-model');
 require('jii-ar-sql');
+require('jii-urlmanager');
 
 global.app = Jii.namespace('app');
 require('require-all')(__dirname + '/controllers');

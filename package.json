@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "jii": "latest",
+    "jii-httpserver": "latest",
+    "jii-model": "latest",
+    "jii-ar-sql": "latest",
+    "jii-urlmanager": "latest",
     "require-all": "0.0.8"
   }
 }
