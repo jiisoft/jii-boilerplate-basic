@@ -1,0 +1,9 @@
+{
+  "name": "My Application",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jii": "latest",
+    "require-all": "0.0.8"
+  }
+}

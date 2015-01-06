@@ -5,20 +5,22 @@ Basic boilerplate application
 ---
 
 Basic application supplied with Jii Framework. Application represent is http server
-with simple form and model with validation. Run application as:
+with simple form and model with validation.
 
 Install
 ---
 
 ```sh
-npm install jii-boilerplate-basic
+git clone https://github.com/jiisoft/jii-boilerplate-basic
+cd jii-boilerplate-basic
+npm install
 ```
 
 Run
 ---
 
 ```sh
-node apps/basic/index.js
+node index.js
 ```
 
 After run, site will be available at http://localhost:3000/
