@@ -1,3 +1,6 @@
+
+var Jii = require('jii');
+
 /**
  * @class app.models.TextModel
  * @extends Jii.base.Model

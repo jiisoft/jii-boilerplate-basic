@@ -1,6 +1,7 @@
 global.Jii = require('jii');
 require('jii-httpserver');
 require('jii-model');
+require('jii-ar-sql');
 
 global.app = Jii.namespace('app');
 require('require-all')(__dirname + '/controllers');
@@ -18,6 +19,12 @@ Jii.createWebApplication({
 			},
 			http: {
 				className: 'Jii.httpServer.HttpServer'
+			},
+			db: {
+				className: 'Jii.sql.mysql.Connection',
+				database: 'jii-boilerplate-basic',
+				username: 'jiitest',
+				password: 'jiitest'
 			}
 		}
 	}

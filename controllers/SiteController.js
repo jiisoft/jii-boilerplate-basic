@@ -5,6 +5,8 @@
 
 var fs = require('fs');
 
+var Jii = require('jii');
+
 /**
  * @class app.controllers.SiteController
  * @extends Jii.base.Controller
