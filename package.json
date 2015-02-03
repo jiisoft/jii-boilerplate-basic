@@ -1,6 +1,6 @@
 {
   "name": "my-jii-application",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "dependencies": {
     "jii": "latest",
@@ -9,5 +9,12 @@
     "jii-ar-sql": "latest",
     "jii-urlmanager": "latest",
     "require-all": "0.0.8"
+  },
+  "peerDependencies": {
+    "jii": "*",
+    "jii-httpserver": "*",
+    "jii-model": "*",
+    "jii-ar-sql": "*",
+    "jii-urlmanager": "*"
   }
 }
