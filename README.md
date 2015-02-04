@@ -16,6 +16,9 @@ cd jii-boilerplate-basic
 npm install
 ```
 
+Create database `jii-my-app` and user `jii-my-app` with empty password.
+Import `data/install.sql` to this database.
+
 Run
 ---
 
