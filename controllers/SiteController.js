@@ -56,9 +56,12 @@ var self = Jii.defineClass('app.controllers.SiteController', {
 			// Save user
 			if (context.request.isPost()) {
 				userModel.setAttributes(context.request.post());
-				return userModel.save().then(function() {
+				return userModel.save().then(function(isSuccess) {
 
-					userModel = new app.models.UserModel();
+					console.log(userModel.hasErrors('name'));
+					if (isSuccess) {
+						userModel = new app.models.UserModel();
+					}
 				});
 			}
 		}).then(function() {

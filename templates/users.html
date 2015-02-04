@@ -9,7 +9,7 @@
     </div>
     <div>
         <input type="text" name="name" value="<%- userModel.get('name') %>" placeholder="Name" />
-        <%= userModel.hasErrors('Name') ? 'Error: ' + userModel.getErrors('Name') : '' %>
+        <%= userModel.hasErrors('name') ? 'Error: ' + userModel.getErrors('name') : '' %>
     </div>
     <input type="submit" value="Add" />
 </form>
