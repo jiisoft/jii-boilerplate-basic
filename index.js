@@ -1,8 +1,6 @@
 global.Jii = require('jii');
 require('jii-httpserver');
-require('jii-model');
 require('jii-ar-sql');
-require('jii-urlmanager');
 
 global.app = Jii.namespace('app');
 require('require-all')(__dirname + '/controllers');
@@ -15,7 +13,8 @@ Jii.createWebApplication({
 			urlManager: {
 				className: 'Jii.urlManager.UrlManager',
 				rules: {
-					'': 'site/index'
+					'': 'site/index',
+					'users': 'site/users'
 				}
 			},
 			http: {
@@ -23,12 +22,13 @@ Jii.createWebApplication({
 			},
 			db: {
 				className: 'Jii.sql.mysql.Connection',
-				database: 'jii-boilerplate-basic',
-				username: 'jiitest',
-				password: 'jiitest'
+				database: 'jii-my-app',
+				username: 'jii-my-app',
+				password: ''
 			}
 		}
 	}
 });
 
+Jii.app.db.open();
 Jii.app.http.start();
