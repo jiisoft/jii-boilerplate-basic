@@ -88,7 +88,12 @@ var self = Jii.defineClass('app.controllers.SiteController', {
 			// Send response
 			context.response.send();
 		});
+	},
 
+	actionView: function(context) {
+		context.response.data = this.render('view', {qqq: 111});
+		//context.response.data = this.renderFile('@app/views/site/view.html', {qqq: 111});
+		context.response.send();
 	}
 
 });

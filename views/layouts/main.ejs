@@ -1,0 +1,35 @@
+<%
+/** @typedef {String} qqq */
+/** @this {Jii.view.WebView} */
+(function() {
+
+app.assets.AppAsset.register(this);
+%>
+
+<!DOCTYPE html>
+<html lang="<%- Jii.app.language %>">
+<head>
+    <meta charset="<%- Jii.app.charset %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%- this.title %></title>
+    <%= this.head(); %>
+</head>
+<body>
+
+<%= this.beginBody() %>
+    <div class="wrap">
+        111
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-left">&copy; My Company</p>
+            <p class="pull-right">Jii</p>
+        </div>
+    </footer>
+
+<%= this.endBody() %>
+</body>
+</html>
+
+<% })(); %>
