@@ -8,11 +8,11 @@ var Jii = require('jii');
 
 /**
  * @class app.assets.AppAsset
- * @extends Jii.view.AssetBundle
+ * @extends Jii.assets.AssetBundle
  */
 var self = Jii.defineClass('app.assets.AppAsset', {
 
-	__extends: Jii.view.AssetBundle,
+	__extends: Jii.assets.AssetBundle,
 
 	basePath: '@webroot',
 	baseUrl: '@web',

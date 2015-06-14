@@ -6,6 +6,8 @@
     "jii": "*",
     "jii-httpserver": "*",
     "jii-ar-sql": "*",
+    "jii-view": "*",
+    "jii-assets": "*",
     "require-all": "0.0.8"
   },
   "devDependencies": {
