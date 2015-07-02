@@ -52,7 +52,7 @@ var self = Jii.defineClass('app.controllers.SiteController', {
 		// Get search query from request
 		var searchQuery = context.request.get('search') || '';
 
-		Jii.when.resolve().then(function() {
+		Promise.resolve().then(function() {
 			// Save user
 			if (context.request.isPost()) {
 				userModel.setAttributes(context.request.post());
