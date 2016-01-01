@@ -26,4 +26,4 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
-web/assets/*
+web/app-client.js

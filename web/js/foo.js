@@ -1,3 +1,0 @@
-function fo231o () {
-
-}

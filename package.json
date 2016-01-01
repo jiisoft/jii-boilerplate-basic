@@ -1,16 +1,23 @@
 {
-  "name": "jii-my-app",
-  "version": "0.0.4",
+  "name": "jii-boilerplate-basic",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "jii": "*",
-    "jii-httpserver": "*",
     "jii-ar-sql": "*",
+    "jii-clientrouter": "*",
+    "jii-comet": "*",
+    "jii-console": "*",
+    "jii-httpserver": "*",
+    "jii-model": "*",
+    "jii-urlmanager": "*",
     "jii-view": "*",
-    "jii-assets": "*",
-    "require-all": "0.0.8"
+    "jii-workers": "*"
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "gulp": "^3.9.0",
+    "gulp-easy": "^0.1.7"
   }
 }
