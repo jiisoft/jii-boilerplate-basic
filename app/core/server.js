@@ -10,4 +10,4 @@ global.Jii = require('jii');
 global.app = Jii.namespace('app');
 
 // Module files
-require('./layouts/LayoutView');
+require('./layouts/LayoutView.jsx');

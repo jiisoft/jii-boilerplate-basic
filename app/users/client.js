@@ -2,4 +2,4 @@
 require('./UsersModule');
 require('./controllers/UsersController');
 require('./models/User');
-require('./views/users/UsersIndexView');
+require('./views/users/UsersIndexView.jsx');

@@ -2,4 +2,4 @@
 require('./SiteModule');
 require('./controllers/SiteController');
 require('./server/controllers/ApiController');
-require('./views/site/SiteIndexView');
+require('./views/site/SiteIndexView.jsx');
