@@ -19,4 +19,4 @@ require('jii-ar-sql');
 require('jii-view');
 
 // Module files
-require('./layouts/LayoutView');
+require('./layouts/LayoutView.jsx');
