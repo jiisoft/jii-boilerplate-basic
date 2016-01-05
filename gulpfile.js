@@ -6,14 +6,6 @@ require('gulp-easy')(require('gulp'))
         ],
         './web/app-client.js',
         {
-            transforms: [
-                function() {
-                    return require('babelify').configure({
-                        presets: [
-                            require('babel-preset-react')
-                        ]
-                    })
-                }
-            ]
+            jsx: true
         }
     )

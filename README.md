@@ -10,15 +10,15 @@ Install
 git clone https://github.com/jiisoft/jii-boilerplate-basic
 cd jii-boilerplate-basic
 npm install
-gulp
-jii migrate
+gulp production
+node jii migrate
 ```
 
 Run
 ---
 
 ```sh
-node index.js
+node jii
 ```
 
 After run, site will be available at http://localhost:3000/
