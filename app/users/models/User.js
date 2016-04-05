@@ -17,17 +17,17 @@ var Jii = require('jii');
  */
 Jii.defineClass('app.users.models.User', /** @lends app.users.models.User.prototype */{
 
-	__extends: 'Jii.sql.ActiveRecord',
+    __extends: 'Jii.sql.ActiveRecord',
 
-	__static: /** @lends app.users.models.User */{
+    __static: /** @lends app.users.models.User */{
 
         tableName: function () {
             return 'users';
         }
 
-	},
+    },
 
-    rules: function() {
+    rules: function () {
         return [
             ['email', 'required'],
             [['name', 'email'], 'string', {max: 255}],

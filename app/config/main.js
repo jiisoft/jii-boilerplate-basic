@@ -8,7 +8,6 @@ module.exports = {
              * @type {Jii.urlManager.UrlManager}
              */
             urlManager: {
-                className: 'Jii.urlManager.UrlManager',
                 rules: {
                     'users': 'users/users/index'
                 }

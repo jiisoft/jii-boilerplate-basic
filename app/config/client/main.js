@@ -7,7 +7,6 @@ module.exports = {
              * @type {Jii.comet.client.Client}
              */
             comet: {
-                className: 'Jii.comet.client.Client',
                 serverUrl: 'http://127.0.0.1:3100/stat/node-comet/0/'
             },
 
@@ -16,7 +15,6 @@ module.exports = {
              * @type {Jii.comet.client.NeatClient}
              */
             neat: {
-                className: 'Jii.comet.client.NeatClient',
                 engine: {
                     className: 'NeatComet.NeatCometClient'
                 }
@@ -27,7 +25,6 @@ module.exports = {
              * @type {Jii.sql.remote.Connection}
              */
             db: {
-                className: 'Jii.sql.remote.Connection',
                 route: 'site/api/ar',
                 schema: {
                     className: 'Jii.sql.remote.Schema'
@@ -38,17 +35,13 @@ module.exports = {
              * @name Jii.app.router
              * @type {Jii.clientRouter.Router}
              */
-            router: {
-                className: 'Jii.clientRouter.Router'
-            },
+            clientRouter: {},
 
             /**
              * @name Jii.app.view
              * @type {Jii.view.ClientWebView}
              */
-            view: {
-                className: 'Jii.view.ClientWebView'
-            }
+            view: {}
         }
     },
     context: {

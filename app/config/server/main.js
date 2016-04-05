@@ -17,9 +17,7 @@ module.exports = {
              * @name Jii.app.view
              * @type {Jii.view.ServerWebView}
              */
-            view: {
-                className: 'Jii.view.ServerWebView'
-            }
+            view: {}
         }
     }
 };
