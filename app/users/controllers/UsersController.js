@@ -18,6 +18,7 @@ Jii.defineClass('app.users.controllers.UsersController', /** @lends app.users.co
 	 * @param {Jii.base.Context} context
 	 * @param {Jii.httpServer.Request} context.request
 	 * @param {Jii.httpServer.Response} context.response
+	 * @param {Jii.comet.client.NeatContextProfiles} context.profiles
 	 */
 	actionIndex: function(context) {
         return Promise.resolve().then(function() {

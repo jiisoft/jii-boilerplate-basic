@@ -14,11 +14,7 @@ module.exports = {
              * @name Jii.app.neat
              * @type {Jii.comet.client.NeatClient}
              */
-            neat: {
-                engine: {
-                    className: 'NeatComet.NeatCometClient'
-                }
-            },
+            neat: {},
 
             /**
              * @name Jii.app.db
