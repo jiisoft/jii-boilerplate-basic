@@ -23,7 +23,7 @@ Jii.defineClass('app.users.controllers.UsersController', /** @lends app.users.co
 	actionIndex: function(context) {
         return Promise.resolve().then(function() {
 
-            return context.profiles.getCollection('user');
+            return context.profiles.getCollection('user', 'user');
         }).then(function(collection) {
 
             return this.render(app.users.views.users.UsersIndexView, context, {
