@@ -58,14 +58,10 @@ Jii.defineClass('app.users.views.users.UsersIndexView', /** @lends app.users.vie
                     }
                 }}
             />
-            <Jii.view.react.form.ActiveForm model={this.userFormModel} onSave={this._onSave.bind(this)}>
-                <Jii.view.react.form.Input model={this.userFormModel} name="name" />
-                <Jii.view.react.form.Input model={this.userFormModel} name="email" />
-                <div className="form-group">
-                    <div className="col-sm-offset-2 col-sm-10">
-                        <button type="submit" className="btn btn-default">Send</button>
-                    </div>
-                </div>
+            <Jii.view.react.form.ActiveForm model={this.userFormModel} layout="horizontal">
+                <Jii.view.react.form.Input attribute="name" />
+                <Jii.view.react.form.Input attribute="email" />
+                <Jii.view.react.form.Button type="submit">Send</Jii.view.react.form.Button>
             </Jii.view.react.form.ActiveForm>
         </div>;
     }

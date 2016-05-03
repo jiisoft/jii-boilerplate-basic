@@ -33,6 +33,13 @@ Jii.defineClass('app.users.models.User', /** @lends app.users.models.User.protot
             [['name', 'email'], 'string', {max: 255}],
             ['email', 'email']
         ];
+    },
+
+    attributeLabels: function() {
+        return {
+            email: 'Email',
+            name: 'Name'
+        }
     }
 
 });
