@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gulp-easy": "^0.2.2",
     "jii": "*",
     "jii-ar-sql": "*",
     "jii-clientrouter": "*",
