@@ -13,7 +13,7 @@ Jii.defineClass('app.site.controllers.ApiController', /** @lends app.site.contro
 
 	__extends: 'Jii.base.Controller',
 
-    actions: function () {
+    actions() {
         return {
             ar: 'Jii.sql.remote.ActiveRecordAction'
         };

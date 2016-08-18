@@ -14,7 +14,7 @@ Jii.defineClass('app.site.views.site.SiteIndexView', /** @lends app.site.views.s
 
     __extends: Jii.view.react.ReactView,
 
-    render: function () {
+    render() {
         return <div>
         </div>;
     }

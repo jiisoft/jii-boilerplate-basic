@@ -14,7 +14,7 @@ Jii.defineClass('app.core.migrations.m151125_221459_users_init', /** @lends app.
 
     __extends: Jii.sql.Migration,
 
-    up: function() {
+    up() {
         this.createTable('users', {
             id: this.primaryKey(),
             email: this.string(),
@@ -23,7 +23,7 @@ Jii.defineClass('app.core.migrations.m151125_221459_users_init', /** @lends app.
         });
     },
 
-    down: function() {
+    down() {
         this.dropTable('users');
     }
 

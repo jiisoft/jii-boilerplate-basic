@@ -14,7 +14,7 @@ Jii.defineClass('app.core.layouts.LayoutView', /** @lends app.core.layouts.Layou
 
     __extends: Jii.view.react.LayoutView,
 
-    init: function() {
+    init() {
         this.__super();
 
         Jii.app.view.registerCssFile('bootstrap/css/bootstrap.css');
@@ -30,7 +30,7 @@ Jii.defineClass('app.core.layouts.LayoutView', /** @lends app.core.layouts.Layou
 
     },
 
-    render: function () {
+    render() {
         return <div>
             <nav className="navbar navbar-default navbar-static-top">
                 <div className="container">
@@ -63,7 +63,7 @@ Jii.defineClass('app.core.layouts.LayoutView', /** @lends app.core.layouts.Layou
         </div>;
     },
 
-    _getClientConfig: function() {
+    _getClientConfig() {
         return Jii.mergeConfigs(
             require('../../../app/config/main'),
             require('../../../app/config/client/main'),
@@ -85,7 +85,7 @@ Jii.defineClass('app.core.layouts.LayoutView', /** @lends app.core.layouts.Layou
                 context: {
                     components: {
                         profiles: {
-                            data: this.context.profiles.data
+                            data: this.props.context.profiles.data
                         }
                     }
                 }

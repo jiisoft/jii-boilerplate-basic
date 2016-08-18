@@ -21,13 +21,13 @@ Jii.defineClass('app.users.models.User', /** @lends app.users.models.User.protot
 
     __static: /** @lends app.users.models.User */{
 
-        tableName: function () {
+        tableName() {
             return 'users';
         }
 
     },
 
-    rules: function () {
+    rules() {
         return [
             ['email', 'required'],
             [['name', 'email'], 'string', {max: 255}],
@@ -35,7 +35,7 @@ Jii.defineClass('app.users.models.User', /** @lends app.users.models.User.protot
         ];
     },
 
-    attributeLabels: function() {
+    attributeLabels() {
         return {
             email: 'Email',
             name: 'Name'

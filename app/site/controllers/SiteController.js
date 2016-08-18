@@ -21,7 +21,7 @@ Jii.defineClass('app.site.controllers.SiteController', /** @lends app.site.contr
 	 * @param {Jii.httpServer.Response} context.response
 	 * @param {Jii.comet.INeatContextProfiles} context.profiles
 	 */
-	actionIndex: function(context) {
+	actionIndex(context) {
         return this.render(app.site.views.site.SiteIndexView, context);
 	}
 

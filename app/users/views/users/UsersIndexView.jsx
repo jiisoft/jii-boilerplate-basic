@@ -14,16 +14,21 @@ Jii.defineClass('app.users.views.users.UsersIndexView', /** @lends app.users.vie
 
     __extends: Jii.view.react.ReactView,
 
+    props: {
+
+        usersCollection: null
+
+    },
+
     userFormModel: null,
 
-    usersCollection: null,
 
-    init: function() {
+    init() {
         this.__super();
         this.userFormModel = new app.users.models.User();
     },
 
-    _onSave: function() {
+    _onSave() {
         this.userFormModel.setAttributes({
             id: null,
             name: '',
@@ -31,30 +36,29 @@ Jii.defineClass('app.users.views.users.UsersIndexView', /** @lends app.users.vie
         });
     },
 
-    _onDelete: function(model) {
+    _onDelete(model) {
         model.delete();
     },
 
-    render: function () {
+    render() {
         var self = this;
-
         return <div>
             <Jii.view.react.grid.GridView
-                collection={this.usersCollection}
+                collection={this.props.usersCollection}
                 columns={{
                     id: 'id',
                     name: {
                         attribute: 'name',
-                        content: function(model) {
+                        content: model => {
                             return model.get('email') + ' (' + model.get('name') + ')';
                         }
                     },
                     action: {
-                        content: function(model) {
+                        content: model => {
                             return <a href="javascript:void(0)" className="btn btn-xs btn-default" onClick={self._onDelete.bind(this, model)}>
                                     <span className="glyphicon glyphicon-remove" />
                                 </a>;
-                        }.bind(this)
+                        }
                     }
                 }}
             />

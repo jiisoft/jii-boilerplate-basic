@@ -20,16 +20,16 @@ Jii.defineClass('app.users.controllers.UsersController', /** @lends app.users.co
 	 * @param {Jii.httpServer.Response} context.response
 	 * @param {Jii.comet.client.NeatContextProfiles} context.profiles
 	 */
-	actionIndex: function(context) {
-        return Promise.resolve().then(function() {
+	actionIndex(context) {
+        return Promise.resolve().then(() => {
 
             return context.profiles.getCollection('user', 'user');
-        }).then(function(collection) {
+        }).then(collection => {
 
             return this.render(app.users.views.users.UsersIndexView, context, {
                 usersCollection: collection
             });
-        }.bind(this));
+        });
 	}
 
 });
